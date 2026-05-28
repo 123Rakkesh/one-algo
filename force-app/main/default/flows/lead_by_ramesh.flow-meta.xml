@@ -20,22 +20,22 @@
             </value>
         </inputParameters>
         <inputParameters>
-            <name>useEmailTemplate</name>
+            <name>composeEmailContent</name>
             <value>
                 <stringValue>True</stringValue>
             </value>
         </inputParameters>
         <inputParameters>
-            <name>emailTemplateId</name>
+            <name>emailSubject</name>
             <value>
-                <inputConfiguratorMode>Custom</inputConfiguratorMode>
-                <stringValue>00XgK00000HIjOLUA1</stringValue>
+                <stringValue>leades</stringValue>
             </value>
         </inputParameters>
         <inputParameters>
-            <name>recipientId</name>
+            <name>emailBody</name>
             <value>
-                <elementReference>Loop_Through_Leads.Id</elementReference>
+                <inputConfiguratorMode>Custom</inputConfiguratorMode>
+                <stringValue>&lt;p&gt;fhsdfhalkjflkajflkajf&lt;/p&gt;</stringValue>
             </value>
         </inputParameters>
         <nameSegment>emailSimple</nameSegment>
@@ -135,7 +135,8 @@
         <queriedFields>Id</queriedFields>
         <queriedFields>Email</queriedFields>
         <queriedFields>Is_Email_Sent__c</queriedFields>
-        <queriedFields>CreatedDate</queriedFields>
+        <queriedFields>LastName</queriedFields>
+        <queriedFields>Status</queriedFields>
         <sortField>CreatedDate</sortField>
         <sortOrder>Asc</sortOrder>
         <storeOutputAutomatically>true</storeOutputAutomatically>
