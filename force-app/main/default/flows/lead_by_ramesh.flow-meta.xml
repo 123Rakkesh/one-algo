@@ -20,16 +20,22 @@
             </value>
         </inputParameters>
         <inputParameters>
-            <name>useEmailTemplate</name>
+            <name>composeEmailContent</name>
             <value>
                 <stringValue>True</stringValue>
             </value>
         </inputParameters>
         <inputParameters>
-            <name>emailTemplateId</name>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>one algorithm email</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
             <value>
                 <inputConfiguratorMode>Custom</inputConfiguratorMode>
-                <stringValue>00XgK00000HIjOLUA1</stringValue>
+                <stringValue>&lt;p&gt;Welcome to one algorithm&lt;/p&gt;</stringValue>
             </value>
         </inputParameters>
         <inputParameters>
@@ -135,7 +141,6 @@
         <queriedFields>Id</queriedFields>
         <queriedFields>Email</queriedFields>
         <queriedFields>Is_Email_Sent__c</queriedFields>
-        <queriedFields>CreatedDate</queriedFields>
         <sortField>CreatedDate</sortField>
         <sortOrder>Asc</sortOrder>
         <storeOutputAutomatically>true</storeOutputAutomatically>
@@ -162,7 +167,7 @@
         </schedule>
         <triggerType>Scheduled</triggerType>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
     <variables>
         <name>LeadsToUpdate</name>
         <dataType>SObject</dataType>
