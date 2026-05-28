@@ -135,6 +135,7 @@
         <queriedFields>Id</queriedFields>
         <queriedFields>Email</queriedFields>
         <queriedFields>Is_Email_Sent__c</queriedFields>
+        <queriedFields>CreatedDate</queriedFields>
         <sortField>CreatedDate</sortField>
         <sortOrder>Asc</sortOrder>
         <storeOutputAutomatically>true</storeOutputAutomatically>
@@ -161,7 +162,7 @@
         </schedule>
         <triggerType>Scheduled</triggerType>
     </start>
-    <status>Active</status>
+    <status>Draft</status>
     <variables>
         <name>LeadsToUpdate</name>
         <dataType>SObject</dataType>
