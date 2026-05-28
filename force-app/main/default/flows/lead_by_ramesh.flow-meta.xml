@@ -20,22 +20,22 @@
             </value>
         </inputParameters>
         <inputParameters>
-            <name>composeEmailContent</name>
+            <name>useEmailTemplate</name>
             <value>
                 <stringValue>True</stringValue>
             </value>
         </inputParameters>
         <inputParameters>
-            <name>emailSubject</name>
+            <name>emailTemplateId</name>
             <value>
-                <stringValue>leades</stringValue>
+                <inputConfiguratorMode>Custom</inputConfiguratorMode>
+                <stringValue>00XgK00000HIjOLUA1</stringValue>
             </value>
         </inputParameters>
         <inputParameters>
-            <name>emailBody</name>
+            <name>recipientId</name>
             <value>
-                <inputConfiguratorMode>Custom</inputConfiguratorMode>
-                <stringValue>&lt;p&gt;fhsdfhalkjflkajflkajf&lt;/p&gt;</stringValue>
+                <elementReference>Loop_Through_Leads.Id</elementReference>
             </value>
         </inputParameters>
         <nameSegment>emailSimple</nameSegment>
@@ -135,8 +135,6 @@
         <queriedFields>Id</queriedFields>
         <queriedFields>Email</queriedFields>
         <queriedFields>Is_Email_Sent__c</queriedFields>
-        <queriedFields>LastName</queriedFields>
-        <queriedFields>Status</queriedFields>
         <sortField>CreatedDate</sortField>
         <sortOrder>Asc</sortOrder>
         <storeOutputAutomatically>true</storeOutputAutomatically>
@@ -163,7 +161,7 @@
         </schedule>
         <triggerType>Scheduled</triggerType>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
     <variables>
         <name>LeadsToUpdate</name>
         <dataType>SObject</dataType>
